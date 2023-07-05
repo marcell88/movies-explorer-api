@@ -18,7 +18,7 @@ const signinValidation = celebrate({
 
 const idParamValidation = celebrate({
   params: Joi.object().keys({
-    id: Joi.string().regex(idRegex),
+    id: Joi.string().required().regex(idRegex),
   }),
 });
 
